@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f0f2f5;
+}
+header {
+  background-color: #2c3e50;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.featured h2 {
+  margin: 1rem auto 1rem;
+  text-align: center;
+}
+/* Actividad 1: Featured product */
+.featured-card {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 900px;
+  margin: 1rem auto 1rem;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.featured-card .product-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.featured-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.price {
+  font-weight: bold;
+  background-color: #2c9d5f;
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-align: center;
+}
+button {
+  background-color: #2c9d5f;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.catalog {
+  padding: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.catalog h2 {
+  text-align: center;
+}
+
+/* Actividad 2: Grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.product-card {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.product-card .price {
+  justify-self: center;
+  margin-top: auto;
+  border-radius: 4px;
+}
+.product-img {
+  width: 50%;
+  height: 160px;
+  border-radius: 8px;
+  align-self: center;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2c3e50;
+  color: #ffffff;
+}
+
+/* Media Queries */
+/* Tablet: 3 columnas */
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Notebook: 3 columnas (cumple la consigna de 3 columnas) */
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 599px) {
+  .featured-card {
+    text-align: center;
+    padding: 0.75rem;
+  }
+  .featured-card .product-img {
+    height: 200px;
+  }
+}

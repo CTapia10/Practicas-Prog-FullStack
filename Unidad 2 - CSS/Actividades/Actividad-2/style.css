@@ -1,0 +1,67 @@
+/* Actividad 1: selector de tipo + sintaxis básica */
+body {
+  /* TODO: font-family, margin, padding */
+  background-color: #f0f2f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* Actividad 2: selector de id */
+#site-header {
+  /* TODO: background-color, color, padding */
+  background-color: #2c3e50;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+/* Actividad 2: selector de clase */
+.card {
+  /* TODO: background-color, padding, border-radius */
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  margin: 20px auto;
+}
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.name {
+  color: #2c3e50;
+  font-size: 18px;
+  font-weight: bold;
+}
+.bio {
+  color: #555555;
+  font-size: 14px;
+  font-weight: normal;
+}
+.skills {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* Actividad 2: selector descendiente */
+.card p {
+  /* TODO: color */
+  color: #555555;
+}
+
+.skills li {
+  background-color: #2c9d5f;
+  color: #ffffff;
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 8px;
+  border-radius: 12px;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2c3e50;
+  color: #ffffff;
+}

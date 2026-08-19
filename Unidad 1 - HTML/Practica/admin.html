@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración</title>
+</head>
+
+<body>
+    <header>
+        <h1>Panel de Administración</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Volver a la página principal</a></li>
+                <li><a href="#">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <h2>Gestión de Productos</h2>
+        <hr>
+        <button type="button">Agregar producto</button>
+        <hr>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Categoría</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><img src="./assets/burger.jpg" alt="Hamburguesa con queso" width="50" height="50"></td>
+                    <td>Hamburguesa con queso</td>
+                    <td>Hamburguesa</td>
+                    <td>$15000</td>
+                    <td>10</td>
+                    <td>
+                        <a href="#">Editar</a>
+                        <br>
+                        <a href="#">Eliminar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="./assets/pizza.jpg" alt="Pizza" width="50" height="50"></td>
+                    <td>Pizza Pepperoni</td>
+                    <td>Pizza</td>
+                    <td>$10000</td>
+                    <td>10</td>
+                    <td>
+                        <a href="#">Editar</a>
+                        <br>
+                        <a href="#">Eliminar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="./assets/gaseosa-cola.jpg" alt="Gaseosa de cola" width="50" height="50"></td>
+                    <td>Gaseosa de cola</td>
+                    <td>Bebida</td>
+                    <td>$1500</td>
+                    <td>10</td>
+                    <td>
+                        <a href="#">Editar</a>
+                        <br>
+                        <a href="#">Eliminar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><img src="./assets/helado.jpg" alt="Helado" width="50" height="50"></td>
+                    <td>Helado</td>
+                    <td>Postre</td>
+                    <td>$3000</td>
+                    <td>10</td>
+                    <td>
+                        <a href="#">Editar</a>
+                        <br>
+                        <a href="#">Eliminar</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h3>Agregar producto rápido</h3>
+        <details>
+            <summary>Agregar producto</summary>
+            <form action="#">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Hamburguesa con queso"> <br><br>
+                <label for="categoria">Categoría</label>
+                <select id="categoria" name="categoria">
+                    <option value="Hamburguesa">Hamburguesa</option>
+                    <option value="Pizza">Pizza</option>
+                    <option value="Bebida">Bebida</option>
+                    <option value="Postre">Postre</option>
+                </select> <br><br>
+                <label for="precio">Precio</label>
+                <input type="number" id="precio" name="precio" placeholder="Ej: 15000"> <br><br>
+                <label for="stock">Stock</label>
+                <input type="number" id="stock" name="stock" placeholder="Ej: 10"> <br><br>
+                <label for="imagen">Imagen</label>
+                <input type="file" id="imagen" name="imagen"> <br><br>
+                <label for="descripcion">Descripción</label> <br>
+                <textarea id="descripcion" name="descripcion"
+                    placeholder="Ej: Hamburguesa con queso, lechuga, tomate y cebolla" rows="5"
+                    cols="50"></textarea><br><br>
+                <button type="submit">Agregar</button>
+            </form>
+        </details>
+    </main>
+    <hr>
+    <footer>
+        <p>Derechos reservados &copy; 2026</p>
+    </footer>
+</body>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing de planes</title>
+</head>
+
+<body>
+    <header>
+        <h1>Landing de planes</h1>
+        <nav>
+            <a href="#planes">Planes</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="planes">
+            <h2>Nuestros planes</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th scope="col">Plan</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Descuento</th>
+                        <th scope="col">Duración</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Básico</th>
+                        <td>$100</td>
+                        <td>10%</td>
+                        <td>1 mes</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Medio</th>
+                        <td>$150</td>
+                        <td>15%</td>
+                        <td>3 meses</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Premium</th>
+                        <td>$200</td>
+                        <td>20%</td>
+                        <td>12 meses</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contacto">
+            <h2>Contactanos</h2>
+            <form action="#" method="get">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Escribe tu email">
+
+                <label for="tipo_plan">Tipo de plan</label>
+                <select id="tipo_plan" name="tipo_plan">
+                    <option value="basico">Plan Básico</option>
+                    <option value="medio">Plan Medio</option>
+                    <option value="premium">Plan Premium</option>
+                </select>
+
+                <fieldset >
+                    <legend>Motivo de la consulta</legend>
+                    <input type="radio" id="comprar" name="motivo" value="comprar">
+                    <label for="comprar">Comprar un plan</label>
+                    <input type="radio" id="cancelar" name="motivo" value="cancelar">
+                    <label for="cancelar">Cancelar un plan</label>
+                    <input type="radio" id="cambiar" name="motivo" value="cambiar">
+                    <label for="cambiar">Cambiar de plan</label>
+                </fieldset>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" rows="10"
+                    cols="30"></textarea>
+
+                <input type="checkbox" id="acepto" name="acepto" value="si">
+                <label for="acepto">Acepto los términos y condiciones</label>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Derechos reservados &copy; 2026</p>
+    </footer>
+</body>
+
+</html>
