@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 1.5rem;
+  text-align: center;
+}
+#personajes {
+  /* TODO: display grid con grid-template-columns y gap */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.personaje-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+.personaje-card h2 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+.personaje-card img {
+    width: 100%;
+    border-radius: 8px;
+}
